@@ -69,3 +69,8 @@ suite('Functional Tests', function () {
         });
     });
 });
+
+teardown(function() {
+    chai.request(server)
+      .get('/')
+  });
